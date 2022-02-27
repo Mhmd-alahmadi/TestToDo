@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background-color: #0d6efd;
+}
+.MainDiv {
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  min-height: 100px;
+  border-radius: 10px;
+}
+#ch1 {
+  position: relative;
+  padding: 30px 20px;
+}
+#ch1 input {
+  width: 75%;
+  height: 45px;
+  font-size: 15px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+#ch1 input:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+#ch1 button {
+  float: right;
+  width: 20%;
+  border: none;
+  height: 45px;
+  outline: none;
+}
+#ch1 button:focus {
+  border-color: white;
+}
+#Tasks {
+  background-color: white;
+  padding: 30px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.task {
+  background-color: #92b5e1;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid gray;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.task p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 15px;
+}
+.task button {
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+#bb i {
+}
