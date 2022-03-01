@@ -1,7 +1,7 @@
 var x = 0;
 var y = 0;
 var z = 0;
-
+var ff = [];
 function mhmd() {
   if (document.getElementById("InputTask").value == 0) {
     alert("pelase Entre a Task");
@@ -42,15 +42,19 @@ function mmm(...x) {
   document.getElementById(`${v}`).style.textDecoration = "line-through";
 }
 
-/*function hhh() {
+function hhh() {
   for (let i = 0; i < z; i++) {
     let gg = i + "dd";
-     = document.getElementById(`${gg}`);
-    console.log(ff[i]);
+    ff.push(document.getElementById(`${gg}`));
+
+    localStorage.setItem("myArray", ff[i].outerHTML);
   }
-  console.log(ff);
 }
-function hhh() {
+function codeAddress() {
+  document.getElementById("Tasks").innerHTML += localStorage.getItem("myArray");
+}
+//localStorage.setItem(key, annotatedtext.outerHTML);
+/*function hhh() {
   for (let i = 0; i < z; i++) {
     let gg = i + "dd";
 
