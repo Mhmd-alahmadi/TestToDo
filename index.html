@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <script></script>
   </head>
-  <body>
+  <body onLoad="codeAddress()">
     <div class="MainDiv">
       <div id="ch1">
         <input
@@ -22,21 +22,21 @@
         />
         <button
           id="add"
-          onclick="mhmd()"
+          onclick="CreateNewTask()"
           type="submit"
           class="btn btn-primary mb-3">          
           ADD          
         </button>
-      </div>
-      <div id="Tasks"></div>
-    </div>
-  </body>
-</html>
-<!--<button
+        <button
           type="button"
           onclick="hhh()"
           id="save_btn"
           class="btn btn-default"
         >
           Submit
-        </button>-->
+        </button>
+      </div>
+      <div id="Tasks"></div>
+    </div>
+  </body>
+</html>
